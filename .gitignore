@@ -1,4 +1,5 @@
-obj
+*.*
+*
 !*/
 !Makefile*
 !*.[cSh]
