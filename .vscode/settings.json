@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "nemu.h": "c",
+        "helper.h": "c",
+        "monitor.h": "c",
+        "regex.h": "c"
+    }
+}
