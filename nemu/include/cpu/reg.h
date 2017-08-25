@@ -23,7 +23,7 @@ typedef struct {
 
 	/* Do NOT change the order of the GPRs' definitions. */
 
-	swaddr_t eax, ecx, edx, ebx, esp, ebp, esi, edi;
+	uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;
 
 	swaddr_t eip;
 
