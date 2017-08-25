@@ -13,12 +13,15 @@ void reg_test() {
 	uint32_t sample[8];
 	uint32_t eip_sample = rand();
 	cpu.eip = eip_sample;
-
+	assert(1==1);
+	assert(1!=0);
+	
 	int i;
 	for(i = R_EAX; i <= R_EDI; i ++) {
 		sample[i] = rand();
 		reg_l(i) = sample[i];
-		//assert(reg_w(i) == (sample[i] & 0xffff));
+		
+		assert(reg_w(i) == (sample[i] & 0xffff));
 	}
 
 	assert(reg_b(R_AL) == (sample[R_EAX] & 0xff));
